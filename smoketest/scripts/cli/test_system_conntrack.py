@@ -163,16 +163,19 @@ class TestSystemConntrack(VyOSUnitTestSHIM.TestCase):
             },
             'pptp' : {
                 'driver' : ['nf_nat_pptp', 'nf_conntrack_pptp'],
-             },
+            },
+            'rtsp' : {
+                'driver' : ['nf_nat_rtsp', 'nf_conntrack_rtsp'],
+            },
             'sip' : {
                 'driver' : ['nf_nat_sip', 'nf_conntrack_sip'],
-             },
+            },
             'sqlnet' : {
                 'nftables' : ['ct helper set "tns_tcp"']
             },
             'tftp' : {
                 'driver' : ['nf_nat_tftp', 'nf_conntrack_tftp'],
-             },
+            },
         }
 
         # load modules

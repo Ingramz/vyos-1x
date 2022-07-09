@@ -86,6 +86,7 @@ system {
             h323
             nfs
             pptp
+            rtsp
             sip
             sqlnet
             tftp

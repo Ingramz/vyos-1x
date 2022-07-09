@@ -52,10 +52,13 @@ module_map = {
     },
     'pptp' : {
         'ko' : ['nf_nat_pptp', 'nf_conntrack_pptp'],
-     },
+    },
+    'rtsp' : {
+        'ko' : ['nf_nat_rtsp', 'nf_conntrack_rtsp'],
+    },
     'sip' : {
         'ko' : ['nf_nat_sip', 'nf_conntrack_sip'],
-     },
+    },
     'sqlnet' : {
         'nftables' : ['ct helper set "tns_tcp" tcp dport "{1521,1525,1536}" return']
     },
